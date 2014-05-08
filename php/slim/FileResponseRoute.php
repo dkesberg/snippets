@@ -3,8 +3,13 @@
  * example for SLIM framework file response route
  */
 
+// slim app object
 $app = new \Slim\Slim();
 
+// additional data from config, etc
+$data = array();
+
+// the file response route
 $app->get('/file', function() use ($app, $data) {
   
   // path to file
